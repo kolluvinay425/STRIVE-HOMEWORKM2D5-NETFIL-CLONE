@@ -1,2 +1,5 @@
-# STRIVE-HOMEWORKM2D5-NETFIL-CLONE
- 
+# netflix-ui
+
+
+
+[DEMO](http://ubeytdemir.me/netflix-ui/)
