@@ -44,3 +44,6 @@ body {
 #hline {
   color: white;
 }
+.text-justify {
+  text-align: justify;
+}

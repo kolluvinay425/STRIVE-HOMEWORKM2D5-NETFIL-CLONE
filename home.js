@@ -30,10 +30,11 @@ const getMovies = async () => {
                                     src="${element.imageUrl}"
                                     alt=""
                                 />
-                                <p>${element.name}</p>
-                                <p>${element.description}</p>
-                                <p>${element.category}</p>
+                                
                                 </div>
+                                <p>Movie: ${element.name}</p>
+                                <p>Desc: ${element.description}</p>
+                                <p>Category: ${element.category}</p>
                                 <a href="detail.html?id=${element._id}"><button  class="btn btn-primary">Edit</button></a>
                                 <a href="delete.html?id=${element._id}"><button class="btn btn-primary">Delete</button></a>
                                 <div>`;
@@ -54,10 +55,11 @@ const getMovies = async () => {
                                     src="${element.imageUrl}"
                                     alt=""
                                 />
-                                <p>${element.name}</p>
-                                <p>${element.description}</p>
-                                <p>${element.category}</p>
+                                
                                 </div>
+                                <p>Movie: ${element.name}</p>
+                                <p>Desc: ${element.description}</p>
+                                <p>Category: ${element.category}</p>
                                 <a href="detail.html?id=${element._id}"><button  class="btn btn-primary">Edit</button></a>
                                 <a href="delete.html?id=${element._id}"><button class="btn btn-primary">Delete</button></a>
                                 </div>`;
@@ -75,15 +77,31 @@ const getMovies = async () => {
                                     src="${element.imageUrl}"
                                     alt=""
                                 />
-                                <p>${element.name}</p>
-                                <p>${element.description}</p>
-                                <p>${element.category}</p>
+                                
                                 </div>
+                                <p class="text-justify">Movie: ${element.name}</p>
+                                <p class="text-justify">Desc: ${element.description}</p>
+                                <p class="text-justify">Category: ${element.category}</p>
                                 <a href="detail.html?id=${element._id}"><button  class="btn btn-primary">Edit</button></a>
                                 <a href="delete.html?id=${element._id}"><button class="btn btn-primary">Delete</button></a>
                                 </div>`;
 
     //actionMovies.appendChild(div);
   });
+};
+window.onload = async () => {
+  const fetchingdata = await fetch(
+    "https://striveschool-api.herokuapp.com/api/movies/",
+    {
+      method: "get",
+      headers: {
+        Authorization:
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTFjZmI3NjJkNTI2MjAwMTViNmRjYTkiLCJpYXQiOjE2MjkyODkzMzQsImV4cCI6MTYzMDQ5ODkzNH0.e22WBf1Y-4mBUdosbyiU0mR7IrzZU2sqgiCkO1qL7JA",
+      },
+    }
+  );
+
+  const data = await fetchingdata.json();
+  console.log("getList:------------->", data);
 };
 getMovies();
