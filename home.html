@@ -1,283 +1,256 @@
-<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="home.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="home.css" />
     <title>NetFlix | Home</title>
-</head>
+  </head>
 
-<body class="">
+  <body class="">
+    <section class="container">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href=""
+            ><img
+              height="32px"
+              width="70px"
+              src="01_Netflix_Logo/01_Netflix_Logo_RGB/Netflix_Logo_RGB.png"
+              alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <section class="container ">
-        
-            
-                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light ">
-                    <div class="container-fluid">
-                       
-                            <a class="navbar-brand" href=""><img height="32px" width="70px"
-                                    src="01_Netflix_Logo/01_Netflix_Logo_RGB/Netflix_Logo_RGB.png" alt=""></a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  id="list"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a id="list" class="nav-link" href="#">Tv Shows</a>
+              </li>
+              <li class="nav-item">
+                <a id="list" class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a id="list" class="nav-link" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a id="list" class="nav-link" href="backend.html">Add Movie</a>
+              </li>
+            </ul>
 
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class=" navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a id="list" class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="list" class="nav-link" href="#">Tv Shows</a>
-                                </li>
-                                <li  class="nav-item">
-                                    <a id="list" class="nav-link" href="#">Movies</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="list" class="nav-link" href="#">Recently Added</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="list" class="nav-link" href="#">My List</a>
-                                </li>
-                            </ul>
-
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
-
-                                <li class="nav-item">
-                                    <a  class="nav-link" href="#"><img height="25px" width="33px" src="search1.png"
-                                            alt=""></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="list" class="nav-link" href="#">Kids</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="list" class="nav-link" href="#"><img height="25px" width="30px" src="notification.png" alt=""></a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <img height="25px" width="30px"
-                                            src="vinay.png"
-                                            alt="">
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </section>
-        <br>
-
-        <!---Section two row two-->
-              <section class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 col-lg-2" >
-                        <h2>Tv Shows</h2>
-                    </div>
-                    <div class="col-sm-6 col-md-2 col-lg-2" >
-                        
-                        <div class="dropdown">
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Genres
-                            </a>
-                          
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                          </div>
-                    </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img height="25px" width="33px" src="search1.png" alt=""
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a id="list" class="nav-link" href="#">Kids</a>
+              </li>
+              <li class="nav-item">
+                <a id="list" class="nav-link" href="#"
+                  ><img
+                    height="25px"
+                    width="30px"
+                    src="notification.png"
+                    alt=""
+                /></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <img height="25px" width="30px" src="vinay.png" alt="" />
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </div>
-                <br>
-              </section>  
-               
-     
-   
-    
-    
-    
-    <!---  section three row 3        -- - --->
-    
-  <section class="container">
-      <h2 id="secHeading">Trending Now</h2>
-      <div class="row n-3">
-          <div class="col-sm-6 col-md-3 col-lg-2">
-              <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
+              </li>
+            </ul>
           </div>
-          <div class="col-sm-6 col-md-3 col-lg-2">
-            <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
         </div>
+      </nav>
+    </section>
+    <br />
+
+    <!---Section two row two-->
+    <section class="container">
+      <div class="row">
         <div class="col-sm-6 col-md-3 col-lg-2">
-            <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
+          <h2>Tv Shows</h2>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-2">
-            <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-2">
-            <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-2">
-            <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
+        <div class="col-sm-6 col-md-2 col-lg-2">
+          <div class="dropdown">
+            <a
+              class="btn btn-secondary dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Genres
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
         </div>
       </div>
-    <br>
-  </section>
-  <!---section four-->
-     
-   <section class="container">
-       <h2 id="secHeading">Watch it again</h2>
-       <div class="row">
-           <div class="col-sm-6 col-md-2 col-lg-2">
-            <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
-           </div>
-           <div class="col-sm-6 col-md-2 col-lg-2">
-            <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
-        </div>
-        <div class="col-sm-6 col-md-2 col-lg-2">
-            <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
-        </div>
-        <div class="col-sm-6 col-md-2 col-lg-2">
-            <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
-        </div>
-        <div class="col-sm-6 col-md-2 col-lg-2">
-            <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
-        </div>
-        <div class="col-sm- col-md-2 col-lg-2">
-            <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
-        </div>
-       </div>
-       <br>
-   </section> 
- 
+      <br />
+    </section>
 
-   <!-----Section five-->
+    <!---  section three row 3        -- - --->
 
-   <section class="container">
-    <h2 id="secHeading">New Releases</h2>
-    <div class="row">
-        <div class="col-sm-6 col-md-2 col-lg-2">
-         <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
-        </div>
-        <div class="col-sm-6 col-md-2 col-lg-2">
-         <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
-     </div>
-     <div class="col-sm-6 col-md-2 col-lg-2">
-         <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
-     </div>
-     <div class="col-sm-6 col-md-2 col-lg-2">
-         <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
-     </div>
-     <div class="col-sm-6 col-md-2 col-lg-2" >
-         <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
-     </div>
-     <div class="col-sm-6 col-md-2 col-lg-2">
-         <img id="sec3imgid" src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg" alt="">
-     </div>
-    </div>
-    <br><br><br>
-</section> 
-<br><br>
-<hr id="hline">
     <section class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-2 col-lg-2">
-                 <a href=""><img height="25px" width="30px" src="facebook.png" alt=""></a>
-            </div>  
-            <div class="col-sm-6 col-md-2 col-lg-2">
-                <a href=""><img height="25px" width="30px" src="instagram.png" alt=""></a>
-           </div> 
-           <div class="col-sm-6 col-md-2 col-lg-2">
-            <a href=""><img height="25px" width="30px" src="twitter.png" alt=""></a>
-       </div> 
-       <div class="col-sm-6 col-md-2 col-lg-2">
-        <a href=""><img height="25px" width="30px" src="youtube.png" alt=""></a>
-     </div> 
-    <br>
-    </div>
-    <div class="row">
-        <br>
+      <h2 id="secHeading">Horror</h2>
+      <div class="row n-3" id="horrorMovies"></div>
+      <br />
+    </section>
+    <!---section four-->
+
+    <section class="container">
+      <h2 id="secHeading">Comedy</h2>
+      <div class="row" id="comedyMovies"></div>
+      <br />
+    </section>
+
+    <!-----Section five-->
+
+    <section class="container">
+      <h2 id="secHeading">Action</h2>
+      <div class="row" id="actionMovies"></div>
+      <br /><br /><br />
+    </section>
+    <br /><br />
+    <hr id="hline" />
+    <section class="container">
+      <div class="row">
         <div class="col-sm-6 col-md-2 col-lg-2">
-            <br>
-             <p  id="para">Audio subtitles</p>
-        </div>  
+          <a href=""
+            ><img height="25px" width="30px" src="facebook.png" alt=""
+          /></a>
+        </div>
         <div class="col-sm-6 col-md-2 col-lg-2">
-            <br>
-            <p  id="para">Audio Description</p>
-       </div> 
-       <div class="col-sm-6 col-md-2 col-lg-2">
-        <br>
-        <p  id="para">help centers</p>
-   </div> 
-   <div class="col-1">
-       <br>
-    <p>gift cards</p>
- </div> 
-
-</div>
-<div class="row">
-    <div class="col-sm-6 col-md-2 col-lg-2">
-         <p id="para"> Media center</p>
-    </div>  
-    <div class="col-sm-6 col-md-2 col-lg-2">
-        <p id="para">Invester Relation</p>
-   </div> 
-   <div class="col-sm-6 col-md-2 col-lg-2">
-    <p id="para">jobs</p>
-</div> 
-<div class="col-sm-6 col-md-2 col-lg-2">
-<p id="para">Terms of use</p>
-</div> 
-
-</div>
-<div class="row">
-    <div class="col-sm-6 col-md-2 col-lg-2">
-         <p id="para"> Privacy</p>
-    </div>  
-    <div class="col-sm-6 col-md-2 col-lg-2">
-        <p id="para">Legal Notice</p>
-   </div> 
-   <div class="col-sm-6 col-md-2 col-lg-2">
-    <p id="para">cookie preferences</p>
-</div> 
-<div class="col-sm-6 col-md-2 col-lg-2">
-<p id="para">corporate information</p>
-</div> 
-
-</div>
-<div class="row">
-    <div class="col-sm-6 col-md-2 col-lg-2">
-         <p id="para">Contsct Us</p>
-    </div>  
-</div>
-<div class="row">
-    <div class="col-sm-6 col-md-2 col-lg-2">
-         <button id="btn1">Service Code</button>
-    </div>  
-    
-
-</div>
-
-        
-</section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-    
-</body>
-
+          <a href=""
+            ><img height="25px" width="30px" src="instagram.png" alt=""
+          /></a>
+        </div>
+        <div class="col-sm-6 col-md-2 col-lg-2">
+          <a href=""
+            ><img height="25px" width="30px" src="twitter.png" alt=""
+          /></a>
+        </div>
+        <div class="col-sm-6 col-md-2 col-lg-2">
+          <a href=""
+            ><img height="25px" width="30px" src="youtube.png" alt=""
+          /></a>
+        </div>
+        <br />
+      </div>
+      <div class="row">
+        <br />
+        <div class="col-sm-6 col-md-2 col-lg-2">
+          <br />
+          <p id="para">Audio subtitles</p>
+        </div>
+        <div class="col-sm-6 col-md-2 col-lg-2">
+          <br />
+          <p id="para">Audio Description</p>
+        </div>
+        <div class="col-sm-6 col-md-2 col-lg-2">
+          <br />
+          <p id="para">help centers</p>
+        </div>
+        <div class="col-1">
+          <br />
+          <p>gift cards</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-2 col-lg-2">
+          <p id="para">Media center</p>
+        </div>
+        <div class="col-sm-6 col-md-2 col-lg-2">
+          <p id="para">Invester Relation</p>
+        </div>
+        <div class="col-sm-6 col-md-2 col-lg-2">
+          <p id="para">jobs</p>
+        </div>
+        <div class="col-sm-6 col-md-2 col-lg-2">
+          <p id="para">Terms of use</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-2 col-lg-2">
+          <p id="para">Privacy</p>
+        </div>
+        <div class="col-sm-6 col-md-2 col-lg-2">
+          <p id="para">Legal Notice</p>
+        </div>
+        <div class="col-sm-6 col-md-2 col-lg-2">
+          <p id="para">cookie preferences</p>
+        </div>
+        <div class="col-sm-6 col-md-2 col-lg-2">
+          <p id="para">corporate information</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-2 col-lg-2">
+          <p id="para">Contsct Us</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-2 col-lg-2">
+          <button id="btn1">Service Code</button>
+        </div>
+      </div>
+    </section>
+    <script src="home.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

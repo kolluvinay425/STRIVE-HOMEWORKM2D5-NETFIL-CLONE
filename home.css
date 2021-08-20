@@ -1,48 +1,46 @@
-body{
-    background-color: rgb(36, 35, 35);
+body {
+  background-color: rgb(36, 35, 35);
 }
 .container {
-    background-color: rgb(36, 35, 35);
-    padding: 0%;
-    border: 0px;
+  background-color: rgb(36, 35, 35);
+  padding: 0%;
+  border: 0px;
+}
+.container-fluid {
+  background-color: rgb(36, 35, 35);
+  color: white;
+}
+#list {
+  color: white;
+}
+#navbar {
+  padding: 0%;
+}
+.row {
+  padding: 0%;
+  color: white;
+}
+.dropdown {
+  color: white;
 
+  padding: 2px;
 }
-.container-fluid{
-    background-color: rgb(36, 35, 35);
-    color: white;
+#secHeading {
+  color: white;
 }
-#list{
-    color: white;
+#sec3imgid {
+  height: 250px;
+  width: 200px;
+  border: 5px;
+  display: flexbox;
 }
-#navbar{
-    padding: 0%;
+#btn1 {
+  height: 40px;
+  font-size: 10px;
 }
-.row{
-    padding: 0%;
-    color: white;
+#para {
+  text-align: justify;
 }
-.dropdown{
-    color: white;
-    
-    padding: 2px;
-}
-#secHeading{
-    color: white;
-} 
-#sec3imgid{
-    height: fit-content;
-   width: fit-content;
-    border: 5px;
-    display: flexbox;
-}   
-#btn1{
-    height: 40px;
-    font-size: 10px;
-}
-#para{
-    text-align: justify;
-    
-}
-#hline{
-    color: white;
+#hline {
+  color: white;
 }

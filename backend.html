@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href=""
+            ><img
+              height="32px"
+              width="70px"
+              src="01_Netflix_Logo/01_Netflix_Logo_RGB/Netflix_Logo_RGB.png"
+              alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  id="list"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a id="list" class="nav-link" href="#">Tv Shows</a>
+              </li>
+              <li class="nav-item">
+                <a id="list" class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a id="list" class="nav-link" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a id="list" class="nav-link" href="#">My List</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img height="25px" width="33px" src="search1.png" alt=""
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a id="list" class="nav-link" href="#">Kids</a>
+              </li>
+              <li class="nav-item">
+                <a id="list" class="nav-link" href="#"
+                  ><img
+                    height="25px"
+                    width="30px"
+                    src="notification.png"
+                    alt=""
+                /></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <img height="25px" width="30px" src="vinay.png" alt="" />
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container" id="form-data">
+      
+      <form>
+        <div class="form-group">
+          <label >Movie Name</label>
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter email">
+          <br>
+        </div>
+        <div class="form-group">
+          <label >Description</label>
+          <input type="text" class="form-control" id="description" placeholder="Write a description about the movie">
+          <br>
+        </div>
+        <div class="form-group">
+            <label >Category</label>
+            <input type="text" class="form-control" id="category" placeholder="Category">
+            <br>
+          </div>
+          <div class="form-group">
+            <label >image</label>
+            <input type="text" class="form-control" id="imageUrl" placeholder="Add an image URL">
+            <br>
+          </div>
+        
+        <button type="submit" id="loadJson" class="btn btn-primary">Submit</button>
+      </form>
+      
+    <script src="backend.js"></script>
+    
+  </body>
+</html>
